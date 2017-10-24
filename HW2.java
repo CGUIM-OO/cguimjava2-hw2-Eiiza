@@ -64,11 +64,14 @@ public class HW2 {
 
 }
 /**
- * Deck是全部場上的排組;Deck類別分成4個method，ArrayList<Card>、Deck、printDeck、getAllCards()
+ * Deck是全部場上的排組
+ * Deck類別包含3個method，Deck、printDeck、getAllCards;1個instance field，ArrayList<Card> cards
+ * Deck method:是將有(nDeck)副牌全部跑出來， i=牌數 ; x=花色suit ; y=數字rank
+ * printDeck method:是先get一個一個牌，然後轉用成 printCard method
  */
 class Deck{
 	private ArrayList<Card> cards;
-	//Deck method 是將有(nDeck)副牌全部跑出來， i=牌數 ; x=花色suit ; y=數字rank
+	
 	public Deck(int nDeck){
 		cards=new ArrayList<Card>();
 		//1 Deck have 52 cards, https://en.wikipedia.org/wiki/Poker
@@ -101,7 +104,9 @@ class Deck{
 	}
 }
 /**
- * Description: TODO: please add description here
+ * Card是定義一個牌長怎樣(藍圖)
+ * Deck類別包含3個method，printCard、getSuit、getRank;2個instance field，suit、rank
+ * printCard method:將數字轉換成英文
  */
 class Card{
 	private int suit; //Definition: 1~4, Clubs=1, Diamonds=2, Hearts=3, Spades=4
