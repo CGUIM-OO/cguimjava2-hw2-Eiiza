@@ -3,8 +3,10 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 /**
- * @author TODO: B0544225陳勗恩
- * Try to write some comments for your codes (methods, 15 points)
+ * @author  B0544225陳勗恩
+ * 1.輸入牌數(nDeck)
+ * 2.deck:將牌數帶入實體化Deck類別
+ * 3.再把deck帶入Deck類別裡的printDeck方法
  */
 public class HW2 {
 
